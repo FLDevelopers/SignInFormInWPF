@@ -24,7 +24,7 @@ namespace SignInForm
             }
             else
             {
-                txtEmail.Visibility = Visibility.Visible;
+                textEmail.Visibility = Visibility.Visible;
             }
         }
 
@@ -49,7 +49,7 @@ namespace SignInForm
         {
             if(!string.IsNullOrEmpty(txtEmail.Text) && !string.IsNullOrEmpty(txtPassword.Password))
             {
-                MessageBox.Show("Successfuly Logged In");
+                MessageBox.Show($"email: {txtEmail.Text}\n\npassword: {txtPassword.Password}");
             }
         }
 
